@@ -1,25 +1,147 @@
-new file
-
 
 
 nav {
 
+  background-color: ;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Default: Horizontal */
+  justify-content: space-between;
+}
+
+nav ul li {
+  background-color: floralwhite;
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  border: 3px solid #bfc6ab;
+}
+
+ nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #8b917b; /* Make it more visible */
+  font-family: 'Anton', serif;
+  display: block; /* Ensure clickable area is larger */
+  text-align: center;
+  padding: 10px;
+}
+
+}
+
+nav ul li a:hover {
+  text-decoration: ;
+  color: blue;
 }
 
 
 body {
-	bakcground-color: rgba(227, 218, 201, 1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0ead6;
 
+  /*width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black; */
 }
 
 
 
-.main-image{
-	max-width: 75%;
 
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Notable", serif;
+  font-size: 3rem;
+  color: #0b5834;
+  text-shadow: 2px 2px 1px #bfc6ab;
+}
+
+p {
+  font-family: "Aleo", serif;
+  font-size: 1rem;
+  background-color: #bfc6ab;
+}
+
+.intro-text {
+  margin: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+/*  background-color: rgba(0,162,230,0.3);*/
+  background-color: #bfc6ab;
+  border-radius: 10px;
+}
+
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+  .aleo-<uniquifier> {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+}
+
+.main-image img {
+  width: 400px; /* Adjust size */
+  max-width: 100%; /* Ensure it doesn't grow beyond this */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Optional */
+  display: block;
 }
 
 
+footer {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: black;
+  color: black;
+  background-color: #bfc6ab;
+  border-radius: 10px;
+}
+
+/*start of media query */
+@media screen and (max-width: 500px){
+
+  .flex-squares {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 
+  }
 
+  .nesting {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .plantlist {
+    font-size: 2rem;
+  }
+
+  .plantlist li {
+    list-style-type: square;
+
+  }
+
+}
