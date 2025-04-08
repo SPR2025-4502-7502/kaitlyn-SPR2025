@@ -102,6 +102,8 @@ h2 {
   font-style: normal;
   color: black;
   margin-top: 10;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 
   
 }
@@ -114,18 +116,26 @@ h3 {
   color: black;
   font-size: 1;
   margin-left: 4px;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
 }
 
 .list-item{ 
   display: flex;
   background-color: rgb(110,91,91,0.4);
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   max-width: 800px;
   padding: 10px;
   margin: 20px auto;
 }
 
+address{text-align: left;
+  padding: 0.3rem;
+  font-size: 1rem;
+  line-height: 1;
+}
 
 
 p {
@@ -133,7 +143,8 @@ p {
   font-size: 1rem;
   font-style: normal;
   background-color: #bfc6ab;*/
- 
+  padding-left: 1rem;
+  padding-right: 1rem;
 font-family: "Aleo", serif;
   font-size: 1rem;
   background-color: #bfc6ab;
@@ -141,6 +152,7 @@ font-family: "Aleo", serif;
 
    .desc-label p: { 
     margin-right: 8px;
+    margin-left: 3px;
    }
 
 }
@@ -218,6 +230,7 @@ li {
   border-radius: 3px;
   font-weight: 200;
   margin-left: 1rem;
+  padding:1rem;
 
 }
 
@@ -272,7 +285,7 @@ li {
 }
 
 
-.list-item .desc-label {
+.desc-label {
   display: flex;
   font-weight: 400;
   margin-left:0rem;
@@ -305,6 +318,29 @@ li {
 
   }
 
+  footer {
+  color:#bfc6ab;
+  font-family:'Open Sans', sans-serif;;
+  background-color: #bfc6ab;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  max-width: 100%;
+  position: relative;
+  bottom: 0;
+
+  }
+
+
+footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+
+
+
 
 @media (max-width: 800px) {
     nav ul {
@@ -316,6 +352,8 @@ li {
     width: 100%;
     text-align: center;
   }
+
+ 
 
   .main-image img {
     width: 100%;
@@ -332,8 +370,7 @@ li {
     max-width: 150px;
   }
 }
-
-@media screen (max-width: 550px) {
+@media screen and (max-width: 550) {
   h1 {
     font-size: 2rem;
   }
@@ -345,26 +382,6 @@ li {
   p {
     font-size: 0.9rem;
   }
-
-
-
-
-footer {
-  color:#bfc6ab;
-}
-
-.footerbox{
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  padding: 1rem;
-  color: black;
-  background-color: #bfc6ab;
-  border-radius: 10px;
-  max-width: 300px;
-  margin: 10px auto;
-}
-
 
 
 
