@@ -1,88 +1,400 @@
 
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
 
-nav {
+.skip-link:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0.5rem;
+  font-size: 2rem;
+  background: #fff;
+  z-index: 100;
+}
 
-  background-color:#f0ead6;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0ead6;
+  display: flex;
+  flex-direction: column;
+}
+.main-profile-homepage {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* ….site-nav… */
+
+.site-nav {
+  background-color: #f0ead6;
+  border-bottom: 1px solid #bfc6ab;
+}
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
   max-width: 800px;
   margin: auto;
-  font-size: 1rem;
-  border-radius: 0.2rem;
-  text-transform: uppercase;
+}
+.site-nav__item {
+  margin: 0.5rem;
 }
 
-nav ul {
-  list-style: none; /* Remove bullets */
-  padding: 0;
-  margin: 0;
-  display: flex; /* Default: Horizontal */
-  justify-content: space-between;
-  align-content: stretch;
-  flex-direction: row;
-}
-
-nav ul li {
-  background-color: floralwhite;
-  list-style-type: none;
-  padding: 0.5rem;
-  margin: 0.2rem;
-  border-radius: 1rem;
-  border: 3px solid #bfc6ab;
-  align-items: stretch;
-
-}
-
- nav ul li a {
-  text-decoration: none; /* Remove underline */
-  color: #8b917b; /* Make it more visible */
+.site-nav__link {
+  text-decoration: none;
+  color: #8b917b;
   font-family: 'Anton', serif;
-  display: block; /* Ensure clickable area is larger */
-  text-align: center;
-  padding: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: background 0.3s;
 }
-
-
-
-nav ul li a:hover {
+.site-nav__link:hover {
+  background-color: #bfc6ab;
   color: #0b5834;
-  background-color: #bfc6ab; 
 }
 
 @media screen and (max-width: 600px) {
 }
 
 
-main {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1rem;
-}
-
-
-body {
-  background-color: #f0ead6;
-  overflow: scroll; /* Show scrollbars */
+.main-image {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f0ead6;
-
-  /*width: 600px;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black; */
+justify-content: center;
 }
 
-
-
+.main-image img {
+  width: 100%; /* Adjust size */
+  max-width: 250px; /* Ensure it doesn't grow beyond this */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Optional */
+  display: block;
+}
 
 h1 {
-  display: flex;
-  justify-content: center;
-  font-family: "Notable", serif;
+  font-family: "Notable", sans-serif;
   font-size: 3rem;
   color: #0b5834;
+  text-align: center;
   text-shadow: 2px 2px 1px #bfc6ab;
+  margin-bottom: 1rem;
+  margin-top:1rem;
 }
+
+
+
+
+h2 {
+  font-family: "Anton", sans-serif;
+  text-align: left;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  margin-top: 10;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+h3 {
+  font-family: "Aleo", serif;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 1;
+  margin-left: 4px;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+p {
+  font-family: "Aleo", serif;
+}  
+
+.intro-text {
+  margin: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #bfc6ab;
+  border-radius: 10px;
+}
+
+.gallery-body {
+  text-align: center;
+  padding:1rem;
+}
+
+
+
+.site-footer {
+  width: 100%;
+  font-family: "anton", sans-serif;
+  background-color:rgb(110,91,91,0.4);
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.4rem;
+  color: black;
+  opacity: 80%;
+}
+
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+
+/* …movie lists intro and grid… */
+
+.movie-list-section {
+  border: 3px solid #8B0000;
+  padding-right:1rem;
+  padding-left:1rem;
+  border-radius: 0rem;
+  margin: 1rem auto;
+  max-width: 800px;  
+  width: 100%;     
+}
+
+.movie-list-section-heading {
+  color: black;
+  text-shadow: 2px 2px 0 #8B0000;
+  font-family: "Notable", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.movie-list-section-intro {
+  background-color: ;
+  padding: 1rem;
+  margin: 0.5rem 0 0;
+  border-radius: 0rem;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 250px;
+}
+
+
+/* Container for cards */
+
+.movie-card {
+  display: flex;
+  background-color: rgba(110,91,91,0.4);   /* greyish container */
+  box-shadow: inset 1rem 1rem rgb(110,101,91);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0.8rem;
+  font-family: "Aleo", serif;
+  font-weight: 250;
+  color: black;
+}
+
+.movie-card-desc-label {
+  background-color: #f9f3db; 
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+
+
+.movie-card-title{
+font-size: 2rem;
+}
+
+.movie-card-director{
+font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+/* —— Intro box —— */
+.locations-intro {
+  max-width: 800px;
+  margin: 2rem auto 1.5rem;
+  padding: 1.25rem;
+  background-color: #f0ead6;
+  border: 3px solid rgba(110,91,91,0.4);
+  border-radius: 0.5rem;
+}
+.locations-intro h1 {
+  font-family: "Notable", serif;
+  font-size: 2.5rem;
+  color: #0b5834;
+  text-align: center;
+  text-shadow: 2px 2px 1px #bfc6ab;
+  margin: 0 0 0.75rem;
+}
+.locations-intro p {
+  font-family: "Aleo", serif;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* —— Grid of location cards —— */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(110,91,91,0.4);
+  box-shadow: inset 1rem 1rem #8b917b;;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-family: "Aleo", serif;
+  color: black;
+}
+.location-card h2 {
+  font-family: "Anton", serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+.location-card address {
+  font-style: normal;
+  margin: 0 0 0.75rem;
+  line-height: 1.3;
+}
+.location-card p {
+  flex: 1;                 /* push link to bottom */
+  margin: 0 0 0.75rem;
+}
+.location-card a {
+  color: #0b5834;
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+.hideThis {
+  display: none;
+}
+
+
+/* ── GALLERY LAYOUT ────────────────────────────────────────────────────────── */
+.gallery-plants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+
+.gallery-header{
+  font-family: "Notable", serif;
+  font-size: 1.1rem;
+  color: #8b0000;
+  min-width: 4ch;
+  text-align: center;
+}
+
+
+.gallery-image{
+  justify-content: space-between;
+  align-items: center;
+  max-width: 55%;
+}
+.gallery-image img{
+width: 100%;
+
+}
+.gallery-image:hover img {
+  transform: scale(1.05);
+}
+
+.captioncontainer {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #f9f3db;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/* ── BUTTONS ───────────────────────────────────────────────────────────────── */
+.button-holder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-holder button {
+  background: #8b917b;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.button-holder button:hover {
+  background: rgb(110,91,91,0.4);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* make the “1 / 6” counter stand out */
+#stepper {
+  font-family: "Notable", serif;
+  font-size: 1.1rem;
+  color: black;
+  min-width: 4ch;
+  text-align: center;
+}
+
+/* ── RESPONSIVE TWEAK ──────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .gallery-image { max-width: 100%; }
+  .button-holder {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+address{text-align: left;
+  padding: 0.3rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
 
 .list2-movie h1{
   display: flex;
@@ -95,73 +407,6 @@ h1 {
 }
 
 
-h2 {
-  font-family: "Notable", serif;
-  text-align: left;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-  margin-top: 10;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-
-  
-}
-
-h3 {
-  font-family: "Open Sans", sans-serif;
-  text-align: left;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-  font-size: 1;
-  margin-left: 4px;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-
-}
-
-.list-item{ 
-  display: flex;
-  background-color: rgb(110,91,91,0.4);
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 800px;
-  padding: 10px;
-  margin: 20px auto;
-}
-
-address{text-align: left;
-  padding: 0.3rem;
-  font-size: 1rem;
-  line-height: 1;
-}
-
-
-p {
- /* font-family: "Tinos", serif;
-  font-size: 1rem;
-  font-style: normal;
-  background-color: #bfc6ab;*/
-  padding-left: 1rem;
-  padding-right: 1rem;
-font-family: "Aleo", serif;
-  font-size: 1rem;
-  background-color: #bfc6ab;
-   text-align: left;
-
-   .desc-label p: { 
-    margin-right: 8px;
-    margin-left: 3px;
-   }
-
-}
-*/
-
-
-
-.movie-intro list2-movie {
-}
 
 .movie-intro {
   background-color: #f0ead6;
@@ -172,76 +417,16 @@ font-family: "Aleo", serif;
   margin: 10px auto;
 }
 
-.movie-intro p {
-  margin: 1rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  font-family: "Tinos", serif;
-  font-size: 1rem;
-  font-style: normal;
-/*  background-color: rgba(0,162,230,0.3);*/
-  background-color: #bfc6ab
-  border-radius: 6px;
-  text-align: center;
-
-}
-.intro-text {
-  margin: 1rem;
-  margin-top: 2rem;
-  padding: 1rem;
-/*  background-color: rgba(0,162,230,0.3);*/
-  background-color: #bfc6ab;
-  border-radius: 10px;
-}
 
 
-li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-  .aleo-<uniquifier> {
-  font-family: "Aleo", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.main-image {
-  display: flex;
-  justify-content: center;
-}
-
-.main-image img {
-  width: 400px; /* Adjust size */
-  max-width: 100%; /* Ensure it doesn't grow beyond this */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 20px; /* Optional */
-  display: block;
-}
-
-
-
-.list-item {
-  display: flex;
-/*  flex-wrap: wrap;*/
-  box-shadow: inset 1rem 1rem #f9f3db;
-  border-radius: 3px;
-  font-weight: 200;
-  margin-left: 1rem;
-  padding:1rem;
-
-}
-
-.movie-list-image {
+.movie-card-image {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
 }
 
-.movie-list-image img{
+.movie-card-image img{
 
   max-width: 200px;
   margin: 1rem;
@@ -255,7 +440,6 @@ li {
       position: absolute;
       bottom: 0;
       right: 0;
-/*      width: 100%;*/
       z-index: 3;
       color: whitesmoke;
       font-family: open sans, sans-serif;
@@ -285,17 +469,6 @@ li {
 }
 
 
-.desc-label {
-  display: flex;
-  font-weight: 400;
-  margin-left:0rem;
-  padding: 0.25rem;
-  margin-top: 1rem;
-
-
-}
-
-
   .flex-squares {
     display: flex;
     flex-direction: column;
@@ -315,50 +488,14 @@ li {
 
   .plantlist li {
     list-style-type: square;
-
   }
 
-  footer {
-  color:#bfc6ab;
-  font-family:'Open Sans', sans-serif;;
-  background-color: #bfc6ab;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  padding-bottom: 1rem;
-  max-width: 100%;
-  position: relative;
-  bottom: 0;
-
-  }
-
-
-footer {
-    font-size: 0.8rem;
-    padding: 1rem;
-    padding-bottom: 1rem;
-  }
-
-
-
-
-@media (max-width: 800px) {
-    nav ul {
+@media (max-width: 600px) {
+  .movie-card {
     flex-direction: column;
-    align-items: center;
   }
-  
-  nav ul li {
-    width: 100%;
-    text-align: center;
-  }
+}
 
- 
-
-  .main-image img {
-    width: 100%;
-    max-width: 300px;
-  }
 
   .list-item {
     flex-direction: column;

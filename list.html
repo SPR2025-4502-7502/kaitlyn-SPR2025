@@ -4,161 +4,182 @@
 <head>
 	<meta charset="utf-8">
 	<title>Movie List</title>
-	<link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page description for SEO -->
+  <meta name="description" content="A personal site by Kaitlyn Morris">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Anton&family=Notable&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Anton&family=Black+Ops+One&family=Cabin+Sketch:wght@400;700&family=Notable&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 
-<nav>
-  <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="list.html"> Second Link </a></li>
-      <li><a href="location-list.html"> Location Link </a></li>
-     <li><a href="https://www.linkedin.com/in/kaitlyn-morris-24415124b/">Third Link</a></li>
-  </ul>
-</nav>
+</head>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<!-- Navigation -->
+  <nav class="site-nav">
+    <ul class="site-nav__list">
+      <li class="site-nav__item"><a class="site-nav__link" href="index.html">Home</a></li>
+      <li class="site-nav__item"><a class="site-nav__link" href="list.html">Movie List</a></li>
+       <li class="site-nav__item"><a class="site-nav__link" href="location-list2.html">Locations List</a></li>
+      <li class="site-nav__item"><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+      <li class="site-nav__item"><a class="site-nav__link" href="https://www.linkedin.com/in/kaitlyn-morris-24415124b/">Contact</a></li>
+    </ul>
+  </nav>
 
 <body>
   <main id="content">
-    <section>
- <div class="movie-intro list2-movie">
-  <h1 class="list2-movie">Top Seven Scariest Movies</h1>
-    <p>Explore the top seven scariest horror movies of all time. Featuring chilling classics that helped define the horror genre, like The Exorcist and Halloween, to more recent iconic films such as Hereditary. Discover what makes these films terrifying, from supernatural hauntings to psychological horror.</p>
- </div>
+    <section class="movie-list-section">
+      <h1 class="movie-list-section-heading">Top Seven Scariest Movies</h1>
+      <p class="movie-list-section-intro">
+      Explore the top seven scariest horror movies of all time. Featuring chilling classics that helped define the horror genre, like The Exorcist and Halloween, to more recent iconic films such as Hereditary. Discover what makes these films terrifying, from supernatural hauntings to psychological horror.
+      </p>
+
+</section>
 
 
- <section class="listings2">
 
-        <div class="list-item">
-          <div class="movie-list-image"><img src="img/The_exorcist_cover.jpeg" alt="A man standing in a dark road under a streetlight infront of a house.">
+    <!-- card #1 -->
+        <div class="movie-card">
+          <div class="movie-card-image"><img src="img/The_exorcist_cover.jpeg" alt="A man standing in a dark road under a streetlight infront of a house.">
             <div class="img-credit">
               <a href="https://m.media-amazon.com/images/I/91lIbBngHgL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
             </div>
           </div>
       
-          <div>
-              <h2>The Exorcist (1973)</h2>
-              <h3>Directed By: William Friedkin</h3>
-              <p class="desc-label">A young girl becomes possessed by a malevolent entity, leading to a desperate exorcism by two priests. The film's unsettling visuals and disturbing themes make it one of the scariest movies of all time.</p> 
+          <div class="movie-card-info">
+              <h2 class="movie-card-title">The Exorcist (1973)</h2>
+              <h3 class="movie-card-director">Directed By: William Friedkin</h3>
+              <p class="movie-card-desc-label">A young girl becomes possessed by a malevolent entity, leading to a desperate exorcism by two priests. The film's unsettling visuals and disturbing themes make it one of the scariest movies of all time.</p> 
           </div>
         </div>
 
 
       
-
-      <div class="list-item">
-          <div class="movie-list-image"><img src="img/hereditary_cover2.jpeg" alt="A dimly lit picture of a young girl and a mother, with blank expressions.">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/81k-3gsxWPL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
+ <!-- card #2 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/hereditary_cover2.jpeg"
+               alt="A dimly lit picture of a young girl and a mother, with blank expressions.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/81k-3gsxWPL._AC_UY436_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
           </div>
-          
-          <div>
-              <h2>Hereditary (2018)</h2>
-              <h3>Directed By: Ari Aster</h3>
-              <p class="desc-label">After a family's matriarch passes away, her daughter uncovers terrifying secrets about their ancestry. The film masterfully builds psychological horror through grief, supernatural elements, and shocking imagery.</p> 
-          </div>
-          
         </div>
-
-
- <div class="list-item">
-          <div class="movie-list-image"><img src="img/the_conjuring_cover.jpeg" alt="A women holding a lit match in a dark room">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/81fIobFXreL._AC_UL640_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
-          </div>
-          
-          <div>
-              <h2>The Conjuring (2013)</h2>
-              <h3>Directed By: James Wan</h3>
-              <p class="desc-label">Based on real paranormal investigations, The Conjuring follows Ed and Lorraine Warren as they help a family tormented by a dark presence. The chilling atmosphere, jump scares, and true-story origins make it terrifying.</p> 
-          </div>
-          
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">Hereditary (2018)</h2>
+          <h3 class="movie-card-director">Directed By: Ari Aster</h3>
+          <p class="movie-card-desc-label">
+            After a family’s matriarch passes away, her daughter uncovers terrifying secrets about their ancestry. The film masterfully builds psychological horror through grief, supernatural elements, and shocking imagery.
+          </p>
         </div>
+      </div>
 
-
-
- <div class="list-item">
-          <div class="movie-list-image"><img src="img/the_shining_cover.jpeg" alt="A man with a wild grin peeking through a broken doo">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/71wqCjqgwWL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
+      <!-- card #3 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/the_conjuring_cover.jpeg"
+               alt="A woman holding a lit match in a dark room.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/81fIobFXreL._AC_UL640_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
           </div>
-          
-          <div>
-              <h2>The Shining (1980)</h2>
-              <h3>Directed By: Stanley Kubrick</h3>
-              <p class="desc-label">A struggling writer takes his family to an isolated hotel for the winter, only to descend into madness under the influence of supernatural forces. The film's psychological horror, eerie cinematography, and unsettling score make it a classic.</p> 
-          </div>
-          
-  </div>
-
-
-
-
-
- <div class="list-item">
-          <div class="movie-list-image"><img src="img/TCM_cover.jpeg" alt=" A masked figure wielding a chainsaw around several other people.">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/81e8iIw8XCL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
-          </div>
-          
-          <div>
-              <h2>The Texas Chainsaw Massacre (1974)</h2>
-              <h3>Directed By: Tobe Hooper</h3>
-              <p class="desc-label">A group of friends stumbles upon a nightmarish family of cannibals led by the terrifying Leatherface. Its raw, documentary-style horror and relentless brutality cement its status as a genre-defining classic.</p> 
-          </div>
-          
- </div>
-
-
-
-
-
-
-
-
- <div class="list-item">
-          <div class="movie-list-image"><img src="img/the_ring_cover.jpeg" alt="a women screaming above a dim picture of a stone well in the ground.">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/91lIbBngHgL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
-          </div>
-          
-          <div>
-              <h2>The Ring (2002)</h2>
-              <h3>Directed By: Gore Verbinski</h3>
-              <p class="desc-label"> A cursed videotape brings death to anyone who watches it within seven days, leading a journalist on a terrifying investigation. Its haunting imagery and eerie storytelling redefined supernatural horror.</p> 
-          </div>
-          
- </div>
-
-
-
-
- <div class="list-item">
-          <div class="movie-list-image"><img src="img/halloween_cover.webp" alt="a jack-o-lantern and a hand holding a long knife">
-            <div class="img-credit">
-              <a href="https://m.media-amazon.com/images/I/61Zo5qnSdoL._AC_UY436_FMwebp_QL65_.jpg" >Image credit</a>
-            </div>
-          </div>
-          
-          <div>
-              <h2>Halloween (1978)</h2>
-              <h3>Directed By: John Carpenter</h3>
-              <p class="desc-label">Michael Myers, a masked killer, escapes from a mental institution and returns to his hometown to wreak havoc on Halloween night. Its suspenseful pacing, iconic score, and relentless terror set the standard for slasher films.</p> 
-          </div>
-          
         </div>
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">The Conjuring (2013)</h2>
+          <h3 class="movie-card-director">Directed By: James Wan</h3>
+          <p class="movie-card-desc-label">
+            Based on real paranormal investigations, The Conjuring follows Ed and Lorraine Warren as they help a family tormented by a dark presence. The chilling atmosphere, jump scares, and true-story origins make it terrifying.
+          </p>
+        </div>
+      </div>
 
-      </section>
+<!-- card #4 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/the_shining_cover.jpeg"
+               alt="A man with a wild grin peeking through a broken door.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/71wqCjqgwWL._AC_UY436_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
+          </div>
+        </div>
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">The Shining (1980)</h2>
+          <h3 class="movie-card-director">Directed By: Stanley Kubrick</h3>
+          <p class="movie-card-desc-label">
+            A struggling writer takes his family to an isolated hotel for the winter, only to descend into madness under the influence of supernatural forces. The film’s psychological horror, eerie cinematography, and unsettling score make it a classic.
+          </p>
+        </div>
+      </div>
+
+      <!-- card #5 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/TCM_cover.jpeg"
+               alt="A masked figure wielding a chainsaw.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/81e8iIw8XCL._AC_UY436_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
+          </div>
+        </div>
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">The Texas Chainsaw Massacre (1974)</h2>
+          <h3 class="movie-card-director">Directed By: Tobe Hooper</h3>
+          <p class="movie-card-desc-label">
+            A group of friends stumbles upon a nightmarish family of cannibals led by the terrifying Leatherface. Its raw, documentary-style horror and relentless brutality cement its status as a genre-defining classic.
+          </p>
+        </div>
+      </div>
+
+      <!-- card #6 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/the_ring_cover.jpeg"
+               alt="A woman screaming above a dim picture of a stone well.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/91lIbBngHgL._AC_UY436_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
+          </div>
+        </div>
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">The Ring (2002)</h2>
+          <h3 class="movie-card-director">Directed By: Gore Verbinski</h3>
+          <p class="movie-card-desc-label">
+            A cursed videotape brings death to anyone who watches it within seven days, leading a journalist on a terrifying investigation. Its haunting imagery and eerie storytelling redefined supernatural horror.
+          </p>
+        </div>
+      </div>
+
+      <!-- card #7 -->
+      <div class="movie-card">
+        <div class="movie-card-image">
+          <img src="img/halloween_cover.webp"
+               alt="A jack-o'-lantern and a hand holding a knife.">
+          <div class="img-credit">
+            <a href="https://m.media-amazon.com/images/I/61Zo5qnSdoL._AC_UY436_FMwebp_QL65_.jpg">
+              Image credit
+            </a>
+          </div>
+        </div>
+        <div class="movie-card-info">
+          <h2 class="movie-card-title">Halloween (1978)</h2>
+          <h3 class="movie-card-director">Directed By: John Carpenter</h3>
+          <p class="movie-card-desc-label">
+            Michael Myers, a masked killer, escapes from a mental institution and returns to his hometown to wreak havoc on Halloween night. Its suspenseful pacing, iconic score, and relentless terror set the standard for slasher films.
+          </p>
+        </div>
+      </div>
+    </div>
 
  </main>
 
-  <footer>
+  <footer class="site-footer">
       <p>Kaitlyn Morris, 2025</p>
     </footer>
 </body>
